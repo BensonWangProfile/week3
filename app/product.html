@@ -1,0 +1,134 @@
+---
+title: Sweetaste 甜點列表
+layout: ./app/layout.ejs
+engine: ejs
+current: product
+---
+<!-- product page -->
+<div class="container mx-auto lg:mb-[60px]">
+    <img class="w-full" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/banner.png?raw=true" alt="">
+</div>
+
+<div class="container mx-auto">
+    <!-- main -->
+    <div class="lg:flex">
+        <!-- 甜點類別 -->
+        <ul class="flex-col text-center w-full mb-[30px] lg:w-1/3 ">
+            <h2 class=" bg-primary-900 py-4 text-primary-300">甜點類別</h2>
+            <!-- 所有甜點（48） -->
+            <li class=" bg-primary-300 list pl-[12px]"><a class="text-primary-900" href="#">所有甜點（48）</a></li>
+            <!-- 本日精選（10） -->
+            <li class=" list"><a class="text-primary-900" href="#">本日精選（10)</a></li>
+            <!-- 人氣推薦（26） -->
+            <li class=" list"><a class="text-primary-900" href="#">人氣推薦（26)</a></li>
+            <!-- 新品上市（12) -->
+            <li class=" list"><a class="text-primary-900" href="#">新品上市（12)</a></li>
+        </ul>
+
+        <!-- 商品列表 -->
+        <ul class="flex flex-wrap justify-center md:justify-between lg:ml-4 lg:w-2/3">
+            <li class="relative mb-5">
+                <img class="z-0 " src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true" alt="">
+                <div class="favorite"></div>
+                <!-- 本日精選 -->
+                <div class="absolute top-0 left-5 z-10 bg-primary-900 w-[36px] h-[106.7px] tracking-[6px] flex items-center justify-center">
+                    <p class="text-primary-300 font-semibold writing-rl">本日精選</p>
+                </div>
+                <!-- 價格 -->
+                <div class="flex w-full items-center text-primary-900">
+                    <div class="text-xl text-center leading-7 font-light py-[14px] border border-primary-300 w-full">焦糖馬卡龍</div>
+                    <div class="text-xl text-center leading-7 font-semibold py-[14px] border border-primary-300 border-l-0 w-full">NT$ 450</div>
+                </div>
+                <!-- 加入購物車 -->
+                <div class="addcart cursor-pointer"><a class="text-primary-900 font-semibold" href="#">加入購物車</a></div>
+            </li>
+            <li class="relative mb-5">
+                <img class="z-0 " src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-2.png?raw=true" alt="">
+                <div class="favorite"></div>
+                <!-- 本日精選 -->
+                <div class="absolute top-0 left-5 z-10 bg-primary-900 w-[36px] h-[106.7px] tracking-[6px] flex items-center justify-center">
+                    <p class="text-primary-300 font-semibold writing-rl">本日精選</p>
+                </div>
+                <!-- 價格 -->
+                <div class="flex w-full items-center text-primary-900">
+                    <div class="text-xl text-center leading-7 font-light py-[14px] border border-primary-300 w-full">焦糖馬卡龍</div>
+                    <div class="text-xl text-center leading-7 font-semibold py-[14px] border border-primary-300 border-l-0 w-full">NT$ 450</div>
+                </div>
+                <!-- 加入購物車 -->
+                <div class="addcart cursor-pointer"><a class="text-primary-900 font-semibold" href="#">加入購物車</a></div>
+            </li>
+            <li class="relative mb-5">
+                <img class="z-0 " src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-3.png?raw=true" alt="">
+                <div class="favorite"></div>
+                <!-- 本日精選 -->
+                <div class="absolute top-0 left-5 z-10 bg-primary-900 w-[36px] h-[106.7px] tracking-[6px] flex items-center justify-center">
+                    <p class="text-primary-300 font-semibold writing-rl">本日精選</p>
+                </div>
+                <!-- 價格 -->
+                <div class="flex w-full items-center text-primary-900">
+                    <div class="text-xl text-center leading-7 font-light py-[14px] border border-primary-300 w-full">焦糖馬卡龍</div>
+                    <div class="text-xl text-center leading-7 font-semibold py-[14px] border border-primary-300 border-l-0 w-full">NT$ 450</div>
+                </div>
+                <!-- 加入購物車 -->
+                <div class="addcart cursor-pointer"><a class="text-primary-900 font-semibold" href="#">加入購物車</a></div>
+            </li>
+            <li class="relative mb-5">
+                <img class="z-0 " src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-4.png?raw=true" alt="">
+                <div class="favorite"></div>
+                <!-- 本日精選 -->
+                <div class="absolute top-0 left-5 z-10 bg-primary-900 w-[36px] h-[106.7px] tracking-[6px] flex items-center justify-center">
+                    <p class="text-primary-300 font-semibold writing-rl">本日精選</p>
+                </div>
+                <!-- 價格 -->
+                <div class="flex w-full items-center text-primary-900">
+                    <div class="text-xl text-center leading-7 font-light py-[14px] border border-primary-300 w-full">焦糖馬卡龍</div>
+                    <div class="text-xl text-center leading-7 font-semibold py-[14px] border border-primary-300 border-l-0 w-full">NT$ 450</div>
+                </div>
+                <!-- 加入購物車 -->
+                <div class="addcart cursor-pointer"><a class="text-primary-900 font-semibold" href="#">加入購物車</a></div>
+            </li>
+            <li class="relative mb-5">
+                <img class="z-0 " src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-5.png?raw=true" alt="">
+                <div class="favorite"></div>
+                <!-- 本日精選 -->
+                <div class="absolute top-0 left-5 z-10 bg-primary-900 w-[36px] h-[106.7px] tracking-[6px] flex items-center justify-center">
+                    <p class="text-primary-300 font-semibold writing-rl">本日精選</p>
+                </div>
+                <!-- 價格 -->
+                <div class="flex w-full items-center text-primary-900">
+                    <div class="text-xl text-center leading-7 font-light py-[14px] border border-primary-300 w-full">焦糖馬卡龍</div>
+                    <div class="text-xl text-center leading-7 font-semibold py-[14px] border border-primary-300 border-l-0 w-full">NT$ 450</div>
+                </div>
+                <!-- 加入購物車 -->
+                <div class="addcart cursor-pointer"><a class="text-primary-900 font-semibold" href="#">加入購物車</a></div>
+            </li>
+            <li class="relative mb-5">
+                <img class="z-0 " src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-6.png?raw=true" alt="">
+                <div class="favorite"></div>
+                <!-- 本日精選 -->
+                <div class="absolute top-0 left-5 z-10 bg-primary-900 w-[36px] h-[106.7px] tracking-[6px] flex items-center justify-center">
+                    <p class="text-primary-300 font-semibold writing-rl">本日精選</p>
+                </div>
+                <!-- 價格 -->
+                <div class="flex w-full items-center text-primary-900">
+                    <div class="text-xl text-center leading-7 font-light py-[14px] border border-primary-300 w-full">焦糖馬卡龍</div>
+                    <div class="text-xl text-center leading-7 font-semibold py-[14px] border border-primary-300 border-l-0 w-full">NT$ 450</div>
+                </div>
+                <!-- 加入購物車 -->
+                <div class="addcart cursor-pointer"><a class="text-primary-900 font-semibold" href="#">加入購物車</a></div>
+            </li>
+        </ul>
+    </div>
+    <!-- pagination -->
+    <ul class="flex justify-center lg:justify-end text-xl leading-5 mb-[60px]">
+        <li class="flex justify-center items-center border border-primary-300 w-[60px] h-[60px] font-light text-primary-900">
+            <img class="w-6 h-6" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_left.png?raw=true" alt="">
+        </li>
+        <li class="flex justify-center items-center border border-primary-900 w-[60px] h-[60px] font-light text-primary-300 bg-primary-900">1</li>
+        <li class="flex justify-center items-center border border-primary-300 w-[60px] h-[60px] font-light text-primary-900 hover:bg-primary-900 hover:text-primary-300">2</li>
+        <li class="flex justify-center items-center border border-primary-300 w-[60px] h-[60px] font-light text-primary-900 hover:bg-primary-900 hover:text-primary-300">3</li>
+        <li class="flex justify-center items-center border border-primary-300 w-[60px] h-[60px] font-light text-primary-900">
+            <img class="w-6 h-6" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_right.png?raw=true" alt="">
+        </li>
+    </ul>
+</div>

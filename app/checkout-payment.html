@@ -1,0 +1,113 @@
+---
+title: Sweetaste 確認付款
+layout: ./app/layout.ejs
+engine: ejs
+current: checkout payment
+---
+<!-- payment page -->
+<div class="container mx-auto flex flex-col md:flex-row justify-center md:mb-[65px] md:mt-[130px]">
+    <!-- 運送 -->
+    <div class="bg-primary-900 w-full md:w-[460px] mr-[20px] ">
+        <div class="px-10">
+            <!-- 進度條 -->
+            <div class="flex flex-row justify-between items-center py-[30px]">
+                <h1 class="text-white font-semibold">付款</h1>
+                <img class="h-[16.45px] md:h-[20px]" 
+                src="https://tina3295.github.io/sweet_taste/sweets%20pay/images/bar_payment.svg" alt="">
+            </div>
+            <!-- 基本資料 -->
+            <!-- 信用卡卡號 -->
+            <div class="flex flex-col items-start text-xl leading-5 text-primary-300 mb-4 relative">
+                信用卡卡號
+                <input class="email-box w-full pl-4 mt-2 text-base" placeholder="9012-3456-7890-1234" type="text">
+                <img class="w-6 absolute top-[53%] right-5" 
+                src="https://tina3295.github.io/sweet_taste/sweets%20pay/images/credit-card.svg" alt="">
+            </div>
+            <!-- 持卡人姓名 -->
+            <div class="text-xl leading-5 text-primary-300">持卡人姓名</div>
+            <div class="flex flex-row justify-between text-xl leading-5 text-primary-300 mb-4">
+                <div class="flex flex-col items-start w-1/2 ">
+                    <input class="email-box w-full pl-4 mt-2 text-base" placeholder="王" type="text">
+                </div>
+                <div class="flex flex-col items-start w-1/2 ml-2">
+                    <input class="email-box w-full pl-4 mt-2 text-base" placeholder="小明" type="text">
+                </div>
+            </div>
+            <!-- 有效期限 -->
+            <div class="text-xl leading-5 text-primary-300">有效期限</div>
+            <div class="flex flex-row justify-between text-xl leading-5 text-primary-300 mb-4">
+                <div class="flex flex-col items-start w-1/2 relative">
+                    <input class="email-box w-full pl-4 mt-2 text-base" placeholder="月" type="text">
+                    <img class="absolute h-6 top-[37%] right-5 cursor-pointer"
+                    src="https://tina3295.github.io/sweet_taste/sweets%20delivery/images/sort-solid.svg" alt="">
+                </div>
+                <div class="flex flex-col items-start w-1/2 ml-2 relative">
+                    <input class="email-box w-full pl-4 mt-2 text-base" placeholder="年" type="text">
+                    <img class="absolute h-6 top-[37%] right-5 cursor-pointer"
+                    src="https://tina3295.github.io/sweet_taste/sweets%20delivery/images/sort-solid.svg" alt="">
+                </div>
+            </div>
+
+            <!-- 背面末三碼 -->
+            <div class="text-xl leading-5 text-primary-300">背面末三碼</div>
+            <input class="email-box w-[186px] pl-4 mt-2 mb-[30px] text-base" placeholder="123" type="text">
+        </div>
+        <button class="bg-secondary hover:bg-primary-300 w-full pt-[19px] pb-[13px] ">
+            <a href="checkout-invoice.html">
+                <h2 class="text-primary-900 font-semibold ">
+                    下一步
+                </h2>
+            </a>
+        </button>
+    </div>
+    <!-- 訂單摘要 -->
+    <div class="hidden md:flex flex-col items-center w-full md:w-[300px] text-primary-600">
+        <!-- 訂單摘要 -->
+        <h2 class= "bg-primary-300 font-semibold w-full h-[65px] text-center py-4">訂單摘要 </h2>
+        <div class="flex flex-col w-full border border-primary-300 mb-5">
+            <!-- 費用 -->
+            <div class="flex flex-row justify-between font-light text-base leading-5 px-[20px] mb-2 mt-4">
+                <div class="">小計</div>
+                <div class="">NT$ 2,700</div>
+            </div>
+            <div class="flex flex-row justify-between font-light text-base leading-5 px-[20px]">
+                <div class="">運費</div>
+                <div class="">NT$ 300</div>
+            </div>
+            <!-- 總計 -->
+            <div class="flex flex-row justify-between font-semibold text-xl leading-5 px-[20px] my-4">
+                <div class="">總計</div>
+                <div class="">NT$ 3,000</div>
+            </div>
+        </div>
+
+        <!-- 購物清單 -->
+        <h2 class= "bg-primary-300 font-semibold w-full h-[65px] text-center py-4">購物清單 </h2>
+        <ul class="flex flex-col w-full border border-primary-300 py-4 px-5 space-y-4">
+            <li class="flex flex-row">
+                <img class="w-[120px] h-[80px] object-cover mr-5" 
+                src="https://tina3295.github.io/sweet_taste/sweets%20yourcart/images/p-8.jpg" alt="">
+                <div class="flex flex-col justify-center w-[130px]">
+                    <div class="text-base font-light">焦糖馬卡龍（2）</div>
+                    <div class="text-xl font-semibold">NT$ 900</div>
+                </div>
+            </li>
+            <li class="flex flex-row">
+                <img class="w-[120px] h-[80px] object-cover mr-5" 
+                src="https://tina3295.github.io/sweet_taste/sweets%20yourcart/images/p-5.png" alt="">
+                <div class="flex flex-col justify-center w-[130px]">
+                    <div class="text-base font-light">焦糖馬卡龍（2）</div>
+                    <div class="text-xl font-semibold">NT$ 900</div>
+                </div>
+            </li>
+            <li class="flex flex-row">
+                <img class="w-[120px] h-[80px] object-cover mr-5" 
+                src="https://tina3295.github.io/sweet_taste/sweets%20yourcart/images/p-3.png" alt="">
+                <div class="flex flex-col justify-center w-[130px]">
+                    <div class="text-base font-light">焦糖馬卡龍（2）</div>
+                    <div class="text-xl font-semibold">NT$ 900</div>
+                </div>
+            </li>
+        </ul>
+    </div>    
+</div>

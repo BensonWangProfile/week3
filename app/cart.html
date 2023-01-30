@@ -1,0 +1,113 @@
+---
+title: Sweetaste 購物車
+layout: ./app/layout.ejs
+engine: ejs
+current: cart
+---
+<div class="container mx-auto flex flex-col justify-center lg:flex-row lg:justify-between lg:items-start">
+    <!-- 您的購物車 -->
+    <div class="flex flex-col w-full lg:w-[620px] text-primary-900">
+        <h2 class=" bg-primary-300 w-full text-center py-4 font-semibold mb-[30px] lg:mb-[33px]">您的購物車</h2>
+        <!-- 買的商品 -->
+        <ul class="flex flex-col pl-[30px] pr-[30px] lg:pl-0 lg:pr-0 lg:items-center">
+            <li class="flex flex-col w-full items-start lg:items-center lg:flex-row lg:pb-[20px] pb-[8.5px] border-b mb-[30px] lg:mb-[20px]">
+                <div class="flex flex-row items-center mb-[8.5px] lg:mb-0">
+                    <!-- img -->
+                    <div class="mr-[16px] lg:mr-[39px]">
+                        <img class="w-[110px] h-[110px] object-contain" 
+                        src="https://tina3295.github.io/sweet_taste/sweets%20yourcart/images/p-8.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col items-start lg:items-center lg:flex-row">
+                        <!-- 商品名稱 -->
+                        <div class="flex flex-col items-start font-light mb-2 lg:mb-0">
+                            <div class="text-xl leading-7 mb-[3px]">焦糖馬卡龍</div>
+                            <div class="text-base leading-5">NT$ 450</div>
+                        </div>
+                        <!-- 數量 -->
+                        <div class="flex flex-row items-center text-[16px] font-light lg:mx-[38px]">
+                            <div class="w-[48px] h-[48px] border border-primary-300 flex items-center justify-center">-</div>
+                            <div class="w-[48px] h-[48px] border-y border-primary-300 flex items-center justify-center">2</div>
+                            <div class="w-[48px] h-[48px] border border-primary-300 flex items-center justify-center">+</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 價格 -->
+                <div class="w-full lg:w-auto border-t lg:border-0 pt-[8.5px] text-right lg:text-center lg:block text-xl leading-5 font-semibold">NT$ 900</div>
+                <div class="hidden lg:block text-[24px] text-primary-600 ml-[39px]"><i class="uil uil-trash-alt"></i></div>
+            </li>
+            <li class="flex flex-col w-full items-start lg:items-center lg:flex-row lg:pb-[20px] pb-[8.5px] border-b mb-[30px] lg:mb-[20px]">
+                <div class="flex flex-row items-center mb-[8.5px] lg:mb-0">
+                    <!-- img -->
+                    <div class="mr-[16px] lg:mr-[39px]">
+                        <img class="w-[110px] h-[110px] object-contain" 
+                        src="https://tina3295.github.io/sweet_taste/sweets%20yourcart/images/p-5.png" alt="">
+                    </div>
+                    <div class="flex flex-col items-start lg:items-center lg:flex-row">
+                        <!-- 商品名稱 -->
+                        <div class="flex flex-col items-start font-light mb-2 lg:mb-0">
+                            <div class="text-xl leading-7 mb-[3px]">焦糖馬卡龍</div>
+                            <div class="text-base leading-5">NT$ 450</div>
+                        </div>
+                        <!-- 數量 -->
+                        <div class="flex flex-row items-center text-[16px] font-light lg:mx-[38px]">
+                            <div class="w-[48px] h-[48px] border border-primary-300 flex items-center justify-center">-</div>
+                            <div class="w-[48px] h-[48px] border-y border-primary-300 flex items-center justify-center">2</div>
+                            <div class="w-[48px] h-[48px] border border-primary-300 flex items-center justify-center">+</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 價格 -->
+                <div class="w-full lg:w-auto border-t lg:border-0 pt-[8.5px] text-right lg:text-center lg:block text-xl leading-5 font-semibold">NT$ 900</div>
+                <div class="hidden lg:block text-[24px] text-primary-600 ml-[39px]"><i class="uil uil-trash-alt"></i></div>
+            </li>
+            <li class="flex flex-col w-full items-start lg:items-center lg:flex-row lg:pb-[20px] pb-[8.5px] border-b mb-[30px] lg:mb-[20px]">
+                <div class="flex flex-row items-center mb-[8.5px] lg:mb-0">
+                    <!-- img -->
+                    <div class="mr-[16px] lg:mr-[39px]">
+                        <img class="w-[110px] h-[110px] object-contain" 
+                        src="https://tina3295.github.io/sweet_taste/sweets%20yourcart/images/p-3.png" alt="">
+                    </div>
+                    <div class="flex flex-col items-start lg:items-center lg:flex-row">
+                        <!-- 商品名稱 -->
+                        <div class="flex flex-col items-start font-light mb-2 lg:mb-0">
+                            <div class="text-xl leading-7 mb-[3px]">焦糖馬卡龍</div>
+                            <div class="text-base leading-5">NT$ 450</div>
+                        </div>
+                        <!-- 數量 -->
+                        <div class="flex flex-row items-center text-[16px] font-light lg:mx-[38px]">
+                            <div class="w-[48px] h-[48px] border border-primary-300 flex items-center justify-center">-</div>
+                            <div class="w-[48px] h-[48px] border-y border-primary-300 flex items-center justify-center">2</div>
+                            <div class="w-[48px] h-[48px] border border-primary-300 flex items-center justify-center">+</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 價格 -->
+                <div class="w-full lg:w-auto border-t lg:border-0 pt-[8.5px] text-right lg:text-center lg:block text-xl leading-5 font-semibold">NT$ 900</div>
+                <div class="hidden lg:block text-[24px] text-primary-600 ml-[39px]"><i class="uil uil-trash-alt"></i></div>
+            </li>
+        </ul>
+    </div>
+    <!-- 訂單摘要 -->
+    <div class="flex flex-col lg:bg-primary-900 w-full text-primary-900 lg:text-white lg:w-[300px]">
+        <h2 class="bg-primary-300 lg:bg-transparent text-center font-semibold py-4 mx-[20px] border-b border-white">訂單摘要</h2>
+        <!-- 計算費用 -->
+        <div class="flex flex-row justify-between font-light text-base leading-5 px-[20px] mb-2 mt-4">
+            <div class="">小計</div>
+            <div class="">NT$ 2,700</div>
+        </div>
+        <div class="flex flex-row justify-between font-light text-base leading-5 px-[20px]">
+            <div class="">運費</div>
+            <div class="">NT$ 300</div>
+        </div>
+        <!-- 總計 -->
+        <div class="flex flex-row justify-between font-semibold text-xl leading-5 px-[20px] my-4">
+            <div class="">總計</div>
+            <div class="">NT$ 3,000</div>
+        </div>
+        <button class="bg-secondary hover:bg-primary-300 font-semibold text-primary-900">
+            <a href="checkout.html">
+                <h2 class="py-4">結帳</h2>
+            </a>
+        </button>
+    </div>
+</div>

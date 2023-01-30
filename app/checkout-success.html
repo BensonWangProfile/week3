@@ -1,0 +1,34 @@
+---
+title: Sweetaste 付款成功
+layout: ./app/layout.ejs
+engine: ejs
+current: checkout-success
+---
+<div class="container mx-auto md:mb-[60px]">
+    <div class="bg-[url(https://tina3295.github.io/sweet_taste/sweets%20pay%20success/images/payment_success.jpg)]
+    bg-cover bg-center w-full h-[460px] flex flex-col items-center justify-center">
+        <!-- 進度條 -->
+        <div class="bg-[url(https://tina3295.github.io/sweet_taste/sweets%20pay%20success/images/bar_payment_success.svg)]
+        bg-contain bg-no-repeat w-[190px] h-6
+        "></div>
+        <!-- 付款成功 -->
+        <div class="bg-[url(https://tina3295.github.io/sweet_taste/sweets%20pay%20success/images/paySuccess.svg)]
+        bg-contain bg-no-repeat w-[190px] h-[45.5px] mt-[30.2px] md:mb-[51.3px]
+        "></div>
+        <!-- 繼續逛逛 -->
+        <button class="hidden md:block bg-secondary w-[300px] h-[65px] text-primary-900 font-semibold">
+            <a href="product.html">
+                <h2 class="">
+                    繼續逛逛
+                </h2>
+            </a>
+        </button>
+    </div>
+    <button class="md:hidden bg-secondary w-full h-[65px] text-primary-900 font-semibold">
+        <a href="product.html">
+            <h2 class="">
+                繼續逛逛
+            </h2>
+        </a>
+    </button>
+</div>

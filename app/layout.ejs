@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.0/css/line.css">
+</head>
+
+<body>
+  <header class="header bg-white z-50 fixed top-0 w-full">
+    <div class="px-[30px] md:px-0 mx-auto container">
+      <div class="flex justify-between items-center h-[84px] md:h-[100px]">
+        <!-- 手機版 toggle-->
+        <a class="block md:hidden" id="toggleBtn" href="index.html">
+          <img class="w-[18px] h-[18px]" 
+          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/dehaze-24px.png?raw=true" alt="">
+        </a>
+        <!-- logo -->
+        <a href="index.html" class="bg-no-repeat block
+        bg-[url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logotype-sm-dark.svg')]
+        w-[114px] h-[17px]
+        md:bg-[url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-all-dark.svg')]
+        md:w-[220px] md:h-10
+        ">
+          <!-- <img class="w-[220px] h-10"
+          src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-all-dark.svg" alt=""> -->
+        </a>
+        <!-- navbar -->
+        <div class="md:flex items-center">
+          <!-- 手機版：要消失 -->
+          <!-- absolute top-[84px] left-0 right-0 text-center hidden -->
+          <ul class="fixed top-[-100%] left-0 right-0 md:static md:flex items-center font-semibold -mx-[30px]">
+            <li class="bg-primary-300 w-full flex justify-center md:block py-4 md:bg-white"><a href="index.html" class="text-primary-900 text-2xl md:text-[16px] md:pt-10 md:pb-4 px-[30px] md:hover:border-b-4 md:hover:border-primary-900 ease-out duration-200">首頁</a></li>
+            <li class="bg-primary-300 w-full flex justify-center md:block py-4 md:bg-white"><a href="product.html" class="text-primary-900 text-2xl md:text-[16px] md:pt-10 md:pb-4 px-[30px] md:hover:border-b-4 md:hover:border-primary-900 ease-out duration-200">甜點</a></li>
+            <li class="bg-primary-300 w-full flex justify-center md:block py-4 md:bg-white"><a href="login.html" class="text-primary-900 text-2xl md:text-[16px] md:pt-10 md:pb-4 px-[30px] md:hover:border-b-4 md:hover:border-primary-900 ease-out duration-200">登入</a></li>
+          </ul>
+          <!-- 購物車 -->
+          <a href="cart.html" class="md:ml-[79px]">
+            <img class="w-6 h-6"  
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mb-[84px] md:mb-[100px]"></div>
+
+  <%- contents %>
+
+  <!-- footer -->
+  <footer class="footer w-full">
+      <!-- footer 上方介紹 -->
+      <div class="bg-primary-900">
+
+        <div class="container mx-auto flex flex-col items-center md:flex-row md:justify-between pb-[30px] md:pb-0">
+          <!-- 訂閱你我的甜蜜郵件 -->
+          <div class="flex items-center  py-[30px]">
+            <img class="w-10 h-10 mr-5"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-light.svg" alt="">
+            <div class="text-2xl leading-[33px] text-primary-300 font-normal">訂閱你我的甜蜜郵件</div>
+          </div>
+          <!-- 請輸入您的信箱 -->
+          <div class="flex justify-center items-center w-[315px] md:w-[380px]">
+            <!-- icon -->
+            <div class="bg-primary-300 pl-5 h-[56px] flex items-center">
+              <span class="w-6 h-6 bg-no-repeat bg-contain block 
+              bg-[url('https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true')]"></span>
+            </div>
+            <input class="email-box pl-2 w-full" placeholder="請輸入您的信箱" type="text">
+            <button class="bg-secondary h-[56px] w-[64px] flex justify-center items-center" type="submit">
+              <span class=" w-6 h-6 bg-no-repeat bg-contain block
+              bg-[url('https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true')]" alt="">
+            </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- footer下方介紹 -->
+      <div class="bg-primary-300">
+        <div class="container mx-auto w-[315px] md:w-full flex items-center pt-[39.5px] justify-between">
+          <div class="flex flex-col mb-[23px]">
+            <!-- logo -->
+            <div class="bg-no-repeat w-[171px] h-[26.6px]  
+            bg-[url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logotype-sm-dark.svg)]"></div>
+            <div class="text-base font-normal text-primary-900 mt-[39.5px] mb-[37px] md:mt-[115.5px] md:mb-[30px]">07-1234-5678<br> sweetaste@email.com 800 <br>高雄市新興區幸福路 520 號</div>
+          </div>
+          <!-- 今天是個吃點心的好日子 -->
+          <img class="w-[59.28px] hidden -mt-[30px] md:block" 
+          src="https://tina3295.github.io/sweet_taste/sweet%20homepage/images/text-sm.svg" alt="">
+        </div>
+        <div class="container mx-auto w-[315px] md:w-full pb-[30px] flex flex-col md:flex-row md:items-end md:justify-between">
+          <!-- icon -->
+          <div class="flex mb-[23px] md:mb-0">
+            <!-- line -->
+            <a href="#" class="">
+              <img class="w-8 mr-2 object-contain"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/ic-line%40.svg" alt="">
+            </a>
+            <!-- facebook -->
+            <a href="#" class="">
+              <img class="w-8 object-contain"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/ic-facebook.svg" alt="">
+            </a>
+          </div>
+          <!-- copyright -->
+          <div class="text-base font-normal text-primary-900 ">© 2018 Sweetaste* All Rights Reserved</div>
+        </div>
+      </div>
+        
+  </footer>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
