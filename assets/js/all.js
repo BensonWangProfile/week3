@@ -9,6 +9,7 @@ toggleBtn.addEventListener("click", function () {
 });
 
 function menuToggle() {
+  menu.classList.toggle("top-[-100%]");
   menu.classList.toggle("top-[84px]");
 }
 //# sourceMappingURL=all.js.map
