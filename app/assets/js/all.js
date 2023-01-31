@@ -6,7 +6,9 @@ toggleBtn.addEventListener("click", function(){
   menuToggle();
 });
 
+
 function menuToggle(){
-  menu.classList.toggle("top-[84px]")
+  menu.classList.toggle("top-[-100%]");
+  menu.classList.toggle("top-[84px]");
 }
 

@@ -71,7 +71,7 @@ function browser() {
     server: {
       baseDir: envOptions.browserDir,
     },
-    index:"checkout-success.html",
+    index:"index.html",
     port: 8080,
   });
 }
