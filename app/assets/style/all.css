@@ -21,7 +21,7 @@
 /* 新增元件  跟自訂css的概念差不多 */
 @layer components{
     .email-box{
-        @apply h-[56px] bg-[#EAF0ED];
+        @apply h-[56px] bg-[#EAF0ED] text-primary-900;
     }
     .writing-rl{
         writing-mode: vertical-rl;
@@ -71,6 +71,11 @@
     width: 100%;
     height: 420px;
     z-index: -2;
+}
+@media (max-width:1024px) {
+    .main-bg::after{
+        display: none;
+    }
 }
 /************** 自訂css Login Page **************/
 .login-bg::after{
@@ -130,4 +135,17 @@
 /* 加入購物車 */
 .addcart{
     @apply text-2xl leading-[33px] py-4 bg-primary-300 text-center;
+}
+
+
+/* 下拉選單 */
+.select-box{
+    appearance: none;
+    background: url(https://tina3295.github.io/sweet_taste/sweets%20delivery/images/sort-solid.svg) no-repeat;
+    background-color: #EAF0ED;
+    background-size: 16px;
+    background-position: 85% 50%;
+    color: #8DA291;
+    font-size: 16px;
+    height: 56px;
 }
