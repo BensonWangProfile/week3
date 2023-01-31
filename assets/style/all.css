@@ -510,6 +510,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 56px;
   --tw-bg-opacity: 1;
   background-color: rgb(234 240 237 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(63 93 69 / var(--tw-text-opacity));
 }
 .writing-rl{
         -webkit-writing-mode: vertical-rl;
@@ -1196,6 +1198,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 420px;
     z-index: -2;
 }
+@media (max-width:1024px) {
+    .main-bg::after{
+        display: none;
+    }
+}
 /************** 自訂css Login Page **************/
 .login-bg::after{
     content: "";
@@ -1274,6 +1281,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.5rem;
   line-height: 2rem;
   line-height: 33px;
+}
+
+
+/* 下拉選單 */
+.select-box{
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: url(https://tina3295.github.io/sweet_taste/sweets%20delivery/images/sort-solid.svg) no-repeat;
+    background-color: #EAF0ED;
+    background-size: 16px;
+    background-position: 85% 50%;
+    color: #8DA291;
+    font-size: 16px;
+    height: 56px;
 }
 .placeholder\:text-base::-webkit-input-placeholder {
   font-size: 1rem;
